@@ -26,7 +26,7 @@
 </head>
 <body>
 <h1>Privacy Policy</h1>
-<p class="meta">Chartcompass · Last updated: 6 November 2026</p>
+<p class="meta">Chartcompass · Last updated: 10 November 2026</p>
 <div class="lang"><a href="#en">English</a><a href="#ru">Русский</a><a href="terms.html">Terms of Use</a></div>
 
 <section id="en">
@@ -35,9 +35,11 @@
 <h2>In short</h2>
 <ul>
   <li>No registration and no account. We do not ask for your name, email or phone number.</li>
-  <li>No ads, no analytics, no tracking across apps. We never sell data.</li>
+  <li>No ads inside the app. We never sell data.</li>
   <li>Your lesson progress and settings stay on your device.</li>
-  <li>We only store a notification token and the tickers you follow — and only if you turn on pattern alerts.</li>
+  <li>We collect anonymous usage statistics (which screens and lessons are opened, whether the subscription screen was shown and what happened with a purchase) to improve the app. For this we use our own database and Google Analytics for Firebase.</li>
+  <li>Google Analytics for Firebase also uses your device’s advertising ID to tell us which of our ad campaigns (Google Ads) brought installs and trials. You can reset or delete the advertising ID in your device settings.</li>
+  <li>On our server we also keep your anonymous answers to the welcome screens and, if you turn on pattern alerts, a notification token and the tickers you follow.</li>
 </ul>
 
 <h2>Data we process</h2>
@@ -47,6 +49,18 @@
       <td>To send pattern alerts you turned on (Pro plan)</td>
       <td>Our database at Supabase (Sydney, Australia); delivered via Expo Push and Firebase Cloud Messaging / Apple Push Notification service</td>
       <td>Until you turn alerts off, your Pro plan ends, or the app is uninstalled (the token stops working and is deleted)</td></tr>
+  <tr><td>Answers on the welcome screens (what interests you: stocks, crypto or both; your experience; whether you started the free trial or skipped the screens), app language, platform (Android / iOS), a random installation ID</td>
+      <td>To pick the first course for you and to see in aggregate which topics users choose, so we can improve the app</td>
+      <td>Our database at Supabase (Sydney, Australia); the same answers are saved as attributes of your anonymous user in RevenueCat</td>
+      <td>Until you ask us to delete them. The installation ID is random and is not linked to your name, email or device identifiers</td></tr>
+  <tr><td>Usage events: app opened, welcome screens viewed and completed, tabs and lessons opened or completed, subscription screen shown, purchase button tapped and the result (completed, cancelled, error code), rating prompt shown; together with app language, time zone, app version and the random installation ID</td>
+      <td>To understand where users get stuck and improve the app (analytics)</td>
+      <td>Our database at Supabase (Sydney, Australia)</td>
+      <td>Up to 12 months, then deleted or kept only as aggregated counts</td></tr>
+  <tr><td>The same usage events plus data collected automatically by Google Analytics for Firebase: app instance ID, Android advertising ID (if allowed in your device settings), device model, OS version, approximate location (country / city, derived from IP address), install source and ad campaign, start of a free trial or subscription</td>
+      <td>Analytics, and measuring which ad campaigns (Google Ads) bring installs, trials and subscriptions</td>
+      <td>Google (Google Analytics for Firebase, Google Ads)</td>
+      <td>According to our Google Analytics retention settings (up to 14 months)</td></tr>
   <tr><td>Purchase and subscription status, a random app user ID</td>
       <td>To unlock paid content and restore purchases</td>
       <td>Google Play / Apple App Store (payment); RevenueCat (subscription status)</td>
@@ -67,7 +81,8 @@
   <li><a href="https://supabase.com/privacy">Supabase</a> — database and file hosting</li>
   <li><a href="https://www.revenuecat.com/privacy">RevenueCat</a> — subscription management</li>
   <li><a href="https://expo.dev/privacy">Expo</a> — push notification delivery</li>
-  <li><a href="https://firebase.google.com/support/privacy">Google Firebase Cloud Messaging</a> and Apple Push Notification service — push delivery</li>
+  <li><a href="https://firebase.google.com/support/privacy">Google Firebase</a> — Firebase Cloud Messaging (push delivery) and Google Analytics for Firebase (usage statistics); Apple Push Notification service — push delivery on iOS</li>
+  <li><a href="https://policies.google.com/technologies/ads">Google Ads</a> — measuring our ad campaigns (no ads are shown inside the app)</li>
   <li><a href="https://policies.google.com/privacy">Google Play</a> / <a href="https://www.apple.com/legal/privacy/">Apple App Store</a> — app distribution and payments</li>
   <li><a href="https://www.binance.com/en/privacy">Binance</a> — public price data for demo trading (no account, no personal data sent by us)</li>
 </ul>
@@ -79,6 +94,7 @@
 <ul>
   <li>Turn alerts off in the app (or remove all followed tickers) — your token and preferences are deleted from our database.</li>
   <li>Reset progress in Profile, or uninstall the app, to delete data stored on the device.</li>
+  <li>Reset or delete your advertising ID, or opt out of ad personalisation, in your device settings (Android: Settings → Google → Ads).</li>
   <li>Manage or cancel subscriptions in Google Play or App Store settings.</li>
   <li>You may ask us to access or delete any data related to you by email (see below). Because there are no accounts, please include your notification token or purchase receipt if you have it.</li>
 </ul>
@@ -97,15 +113,17 @@
 
 <section id="ru" lang="ru">
 <h1>Политика конфиденциальности</h1>
-<p class="meta">Chartcompass · Обновлено: 6 ноября 2026</p>
+<p class="meta">Chartcompass · Обновлено: 10 ноября 2026</p>
 <p>Здесь описано, какие данные обрабатывает мобильное приложение Chartcompass («приложение», пакет <code>com.sabaijai.trading</code>) и зачем. Приложение публикует <strong>Sabaijai</strong> («мы»).</p>
 
 <h2>Коротко</h2>
 <ul>
   <li>Без регистрации и аккаунта. Мы не спрашиваем имя, email или телефон.</li>
-  <li>Без рекламы, аналитики и слежки между приложениями. Мы не продаём данные.</li>
+  <li>Внутри приложения нет рекламы. Мы не продаём данные.</li>
   <li>Прогресс уроков и настройки хранятся только на вашем телефоне.</li>
-  <li>На сервере хранятся только токен уведомлений и тикеры, за которыми вы следите, — и только если вы включили уведомления.</li>
+  <li>Мы собираем анонимную статистику использования (какие экраны и уроки открываются, показывался ли экран подписки и чем закончилась покупка), чтобы улучшать приложение. Для этого используются наша база данных и Google Analytics for Firebase.</li>
+  <li>Google Analytics for Firebase также использует рекламный идентификатор устройства, чтобы показать нам, какие наши рекламные кампании (Google Ads) принесли установки и пробные периоды. Рекламный идентификатор можно сбросить или удалить в настройках телефона.</li>
+  <li>На сервере также хранятся анонимные ответы на вводных экранах и, если вы включили уведомления, токен уведомлений и тикеры, за которыми вы следите.</li>
 </ul>
 
 <h2>Какие данные обрабатываются</h2>
@@ -115,6 +133,18 @@
       <td>Чтобы присылать уведомления по закономерностям, которые вы включили (тариф «Про»)</td>
       <td>Наша база в Supabase (Сидней, Австралия); доставка через Expo Push и Firebase Cloud Messaging / Apple Push Notification service</td>
       <td>Пока уведомления включены и действует тариф «Про»; после удаления приложения токен перестаёт работать и удаляется</td></tr>
+  <tr><td>Ответы на вводных экранах (что вам интересно: акции, крипта или и то и другое; ваш опыт; начали ли вы пробный период или пропустили экраны), язык, платформа (Android / iOS), случайный идентификатор установки</td>
+      <td>Чтобы подобрать первый курс и видеть в целом, какие темы выбирают пользователи, — так мы улучшаем приложение</td>
+      <td>Наша база в Supabase (Сидней, Австралия); те же ответы сохраняются как атрибуты вашего анонимного пользователя в RevenueCat</td>
+      <td>Пока вы не попросите их удалить. Идентификатор установки случайный и не связан с вашим именем, email или идентификаторами устройства</td></tr>
+  <tr><td>События использования: открытие приложения, просмотр и прохождение вводных экранов, открытые вкладки, открытые и пройденные уроки, показ экрана подписки, нажатие кнопки покупки и результат (оплачено, отменено, код ошибки), показ окна оценки; вместе с языком, часовым поясом, версией приложения и случайным идентификатором установки</td>
+      <td>Чтобы понимать, где пользователи останавливаются, и улучшать приложение (аналитика)</td>
+      <td>Наша база в Supabase (Сидней, Австралия)</td>
+      <td>До 12 месяцев, затем удаляются или остаются только в виде общих счётчиков</td></tr>
+  <tr><td>Те же события и данные, которые Google Analytics for Firebase собирает автоматически: идентификатор экземпляра приложения, рекламный идентификатор Android (если разрешён в настройках телефона), модель устройства, версия ОС, примерное местоположение (страна / город по IP-адресу), источник установки и рекламная кампания, начало пробного периода или подписки</td>
+      <td>Аналитика и оценка того, какие рекламные кампании (Google Ads) приносят установки, пробные периоды и подписки</td>
+      <td>Google (Google Analytics for Firebase, Google Ads)</td>
+      <td>Согласно нашим настройкам хранения в Google Analytics (до 14 месяцев)</td></tr>
   <tr><td>Статус покупок и подписки, случайный идентификатор пользователя приложения</td>
       <td>Чтобы открыть платный контент и восстанавливать покупки</td>
       <td>Google Play / App Store (оплата); RevenueCat (статус подписки)</td>
@@ -131,7 +161,7 @@
 <p>Данные банковских карт мы не видим: оплату полностью проводят Google Play или Apple.</p>
 
 <h2>Сервисы, которые мы используем</h2>
-<p>Supabase (база данных и хранение файлов), RevenueCat (управление подписками), Expo (доставка уведомлений), Google Firebase Cloud Messaging и Apple Push Notification service (доставка уведомлений), Google Play и App Store (распространение и оплата), Binance (публичные цены для демо-трейдинга; мы не передаём туда персональные данные). Ссылки на их политики — в английской версии выше.</p>
+<p>Supabase (база данных и хранение файлов), RevenueCat (управление подписками), Expo (доставка уведомлений), Google Firebase — Firebase Cloud Messaging (доставка уведомлений) и Google Analytics for Firebase (статистика использования), Google Ads (оценка наших рекламных кампаний; внутри приложения реклама не показывается), Apple Push Notification service (доставка уведомлений на iOS), Google Play и App Store (распространение и оплата), Binance (публичные цены для демо-трейдинга; мы не передаём туда персональные данные). Ссылки на их политики — в английской версии выше.</p>
 
 <h2>Безопасность</h2>
 <p>Все данные передаются по зашифрованному соединению (HTTPS). Базу уведомлений может читать только наш сервер; приложение может только добавить или удалить свой токен.</p>
@@ -140,6 +170,7 @@
 <ul>
   <li>Выключите уведомления в приложении (или уберите все тикеры) — токен и подписки удаляются из нашей базы.</li>
   <li>Сбросьте прогресс в профиле или удалите приложение, чтобы удалить данные на устройстве.</li>
+  <li>Рекламный идентификатор можно сбросить или удалить, а персонализацию рекламы — отключить в настройках телефона (Android: Настройки → Google → Реклама).</li>
   <li>Подпиской можно управлять и отменить её в настройках Google Play или App Store.</li>
   <li>Вы можете запросить доступ к данным или их удаление по email (ниже). Аккаунтов нет, поэтому приложите, если есть, токен уведомлений или чек покупки.</li>
 </ul>
